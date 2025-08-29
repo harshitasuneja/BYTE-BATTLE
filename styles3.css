@@ -1,0 +1,4 @@
+.card-link:hover {
+    transform: scale(1.05); /* Increases the size of the tab by 5% */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a shadow for a "lifted" effect */
+}

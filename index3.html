@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshita's Dashboard</title>
+    <!-- Link to Tailwind CSS and your custom styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body class="bg-[#000030] text-white min-h-screen p-4 sm:p-8 flex flex-col items-center justify-center">
+
+    <!-- Main Container -->
+    <div class="bg-[#1a1a40] rounded-xl shadow-2xl w-full max-w-6xl p-6 md:p-10 flex flex-col lg:flex-row gap-8">
+
+        <!-- Left Column: Profile & Contact -->
+        <div class="lg:w-1/4 flex flex-col items-center text-center lg:text-left lg:items-start p-6 bg-[#262650] rounded-lg shadow-inner">
+            <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-white tracking-wide">HEY, HARSHITA</h1>
+            <div class="space-y-4 w-full">
+                <!-- Profile Link -->
+                <a href="#" class="block bg-[#1a1a40] text-white py-3 px-6 rounded-md transition-colors duration-200 ease-in-out hover:bg-[#3d3d6b] cursor-pointer">
+                    <span class="font-medium text-lg">Profile</span>
+                </a>
+                <!-- Contact Us Link -->
+                <a href="#" class="block bg-[#1a1a40] text-white py-3 px-6 rounded-md transition-colors duration-200 ease-in-out hover:bg-[#3d3d6b] cursor-pointer">
+                    <span class="font-medium text-lg">Contact Us</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Column: Progress & Tabs -->
+        <div class="lg:w-3/4 flex flex-col gap-8">
+            <div class="w-full h-10 border-b-2 border-white mb-4">
+                <span class="block w-full h-full bg-[#1c1c3c] rounded-b-lg"></span>
+            </div>
+            
+            <!-- Tabs/Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                <!-- Programming Languages Card -->
+                <a href="#" class="card-link block bg-[#3d3d6b] p-6 rounded-xl shadow-md transition-all duration-300 ease-in-out">
+                    <h2 class="text-xl font-semibold mb-2">PROGRAMMING<br>LANGUAGES</h2>
+                    <ul class="text-sm space-y-1 mt-4">
+                        <li>C, C++, PYTHON,</li>
+                        <li>JAVA, JAVASCRIPT</li>
+                    </ul>
+                </a>
+
+                <!-- Placeholder Card 2 -->
+                <a href="#" class="card-link block bg-[#3d3d6b] p-6 rounded-xl shadow-md transition-all duration-300 ease-in-out">
+                    <h2 class="text-xl font-semibold mb-2">PROJECTS<br>COMPLETED</h2>
+                    <p class="text-sm mt-4">List your projects here.</p>
+                </a>
+
+                <!-- Placeholder Card 3 -->
+                <a href="#" class="card-link block bg-[#3d3d6b] p-6 rounded-xl shadow-md transition-all duration-300 ease-in-out">
+                    <h2 class="text-xl font-semibold mb-2">CODING<br>CHALLENGES</h2>
+                    <p class="text-sm mt-4">Display challenge progress.</p>
+                </a>
+                
+                <!-- Placeholder Card 4 -->
+                <a href="#" class="card-link block bg-[#3d3d6b] p-6 rounded-xl shadow-md transition-all duration-300 ease-in-out">
+                    <h2 class="text-xl font-semibold mb-2">CERTIFICATIONS<br>EARNED</h2>
+                    <p class="text-sm mt-4">Show your certifications.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

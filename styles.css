@@ -1,0 +1,177 @@
+body {
+    background-color: #0b0c2e;
+    color: #fff;
+    font-family: 'Pixelify Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border: 2px solid #5a4f78;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.game-on {
+    font-size: 3em;
+    font-weight: bold;
+    color: #e56a78;
+    text-shadow: 0 0 5px #ff00ff;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: rotate(-10deg);
+    filter: drop-shadow(0 0 10px #ff00ff); /* Added this line */
+}
+
+.console-icon {
+    width: 100px;
+    height: 60px;
+    background: url('path/to/console-icon.png') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    filter: drop-shadow(0 0 10px #00ffff);
+    animation: floating 3s ease-in-out infinite;
+}
+
+main {
+    text-align: center;
+    margin-top: -50px;
+    position: relative;
+    z-index: 15;
+}
+.controller-bottom-left {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 150px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #00ffff);
+    z-index: 10;
+    animation: floating-rotate 3s ease-in-out infinite; /* Updated to new animation name */
+}
+.pixel-bottom-right {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    width: 250px; /* Increased the width from 150px to 250px */
+    height: auto;
+    filter: drop-shadow(0 0 10px #00ffff);
+    z-index: 10;
+    transform: rotate(-15deg);
+}
+@keyframes floating-rotate {
+    0% { transform: translateY(0px) rotate(15deg); }
+    50% { transform: translateY(-10px) rotate(15deg); }
+    100% { transform: translateY(0px) rotate(15deg); }
+}
+
+.cloud-icon {
+    width: 300px;
+    height: 150px;
+    background: url('path/to/cloud-icon.png') no-repeat center center;
+    background-size: contain;
+    filter: drop-shadow(0 0 15px #ff69b4);
+    
+}
+
+h1 {
+    font-size: 5em;
+    color: #ffb4e5;
+    margin-top: -30px;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2e3073;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px #00ffff;
+    transition: all 0.3s ease;
+    z-index: 11; /* Add this line */
+    position: relative; /* Add this line */
+}
+
+.cta-button:hover {
+    background-color: #5a4f78;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ffff;
+}
+
+.icons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.vr-guy, .laptop-icon, .health-bar {
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(0 0 10px #00ffff);
+    animation: floating 3s ease-in-out infinite;
+}
+
+.vr-guy { background: url('path/to/vr-guy.png'); }
+.laptop-icon { background: url('path/to/laptop.png'); }
+.health-bar { background: url('path/to/health-bar.png'); }
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+@media (max-width: 768px) {
+    .game-on, .console-icon {
+        position: static;
+        transform: none;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    .icons-grid {
+        grid-template-columns: 1fr;
+    }
+    .container {
+        height: auto;
+    }
+}
